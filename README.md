@@ -22,8 +22,8 @@ A modern IPL ticket booking web application built with **React**, **Vite**, **Re
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/parthi1817/webdevelopment_.git
-cd webdevelopment_
+git clone https://github.com/theraghavendrash/IPL-Ticket-Booking.git
+cd IPL-Ticket-Booking
 ```
 
 ### 2. Install dependencies
@@ -32,15 +32,22 @@ npm install
 ```
 
 ### 3. Environment Variables
-Create a `.env` file in the root directory:
+Create a `.env` or `.env.local` file in the root directory:
 ```env
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_publishable_key
+VITE_SUPABASE_URL=https://bayjbyocjeewbqyihprh.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_2oa_d0zkS4y1jm2e8OGiSQ_9wmM0inw
+VITE_SUPABASE_ANON_KEY=sb_publishable_2oa_d0zkS4y1jm2e8OGiSQ_9wmM0inw
 ```
 *(Reference `.env.example` for the template)*
 
-### 4. Run locally
+### 4. Supabase Database Setup
+1. Open your Supabase project dashboard at [https://supabase.com](https://supabase.com).
+2. Go to the **SQL Editor** tab.
+3. Copy and run the SQL commands from [`supabase_schema.sql`](./supabase_schema.sql) to create the `bookings` table and set up the public insert/select permissions.
+
+### 5. Run locally
 ```bash
 npm run dev
 ```
 Open [http://localhost:5173](http://localhost:5173) in your browser.
+
