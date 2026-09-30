@@ -31,12 +31,7 @@ cd IPL-Ticket-Booking
 npm install
 ```
 
-### 3. Environment Variables
-Create a `.env` or `.env.local` file in the root directory:
-```env
-VITE_SUPABASE_URL=https://bayjbyocjeewbqyihprh.supabase.co
-VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_2oa_d0zkS4y1jm2e8OGiSQ_9wmM0inw
-VITE_SUPABASE_ANON_KEY=sb_publishable_2oa_d0zkS4y1jm2e8OGiSQ_9wmM0inw
+
 ```
 *(Reference `.env.example` for the template)*
 
